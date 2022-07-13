@@ -33,12 +33,16 @@ abi = Sol_compiled["contracts"]["Todolist.sol"]["TodoList"]["abi"]
 bytecode = Sol_compiled["contracts"]["Todolist.sol"]["TodoList"]["evm"]["bytecode"][
     "object"
 ]
-
+# if you wish to deploy the contract
 # Todo = w3.eth.contract(abi=abi, bytecode=bytecode)
 # tx_hash = Todo.constructor().transact()
 # tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash)
+
+# Use the line of code below to test the contract after deploying
 # cont = w3.eth.contract(address=tx_receipt.contractAddress, abi=abi)
-address = "0x92d089316EB96C41992E43e40F029EdC41F1CcbA"
+
+# After deploying comment the codes above out and replace the address below to the address deployed to
+address = "0x92d089316EB96C41992E43e40F029EdC41F1CcbA" 
 cont = w3.eth.contract(address=address, abi=abi)
 
 print(
