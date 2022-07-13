@@ -20,7 +20,8 @@ Sol_compiled = compile_standard(
     },
     solc_version="0.8.3",
 )
-# with open("compiled_code.json", "w") as file:
+#The codes commented below, creates json metadata of the Todolist.sol file and names it compiledCode.json
+# with open("compiledCode.json", "w") as file:
 #     json.dump(compiled_sol, file)
 
 url = "HTTP://127.0.0.1:7545"
